@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>独り言 - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="久しぶりの日記ですね。 関係ないことですが
+明後日は数学甲のテストがあります。
+激しく勉強しないと・・・。（㍉（マテ これまた非常に関係ないですが
+Radeon9200に乗り換えてから、
+CPU負荷が極力かからないような
+コーディングによって作られた3D関係の
+ソフト、ベンチマークソフトなどは &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mulgray.github.com/blog/blog/2004/02/17/du-riyan/">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mulgray.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">独り言</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-02-17T00:00:00+09:00" pubdate data-updated="true">Feb 17<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content">久しぶりの日記ですね。<br>
+<br>
+関係ないことですが<br>
+明後日は数学甲のテストがあります。<br>
+激しく勉強しないと・・・。（㍉（マテ<br>
+<br>
+これまた非常に関係ないですが<br>
+Radeon9200に乗り換えてから、<br>
+CPU負荷が極力かからないような<br>
+コーディングによって作られた3D関係の<br>
+ソフト、ベンチマークソフトなどは<br>
+凄くパフォーマンスがよくなったのですが<br>
+それによって、プログラムがCPUに無駄に<br>
+負荷をかけて動いているかどうかが<br>
+目に見えてわかるようになりました。<br>
+<br>
+3DMark2001とかは4500以上のスコアが出たり<br>
+FPSでは100行ったりしてるようですが<br>
+私の作った3Dプログラムは・・・<br>
+全く・・・FPS値変わってない・・ですね。<br>
+つまりポリゴンを描くメインの処理の前の<br>
+普通のプログラム動作が重すぎて、<br>
+CPU700Mhz程度では全然処理できてないと<br>
+言うことになるんでしょうね。<br>
+<br>
+これは、・・Direct3D「RM」が重いという<br>
+点も原因かもしれない上、<br>
+もともとVBが遅い、20倍遅い、という点も<br>
+原因かもしれない上、<br>
+私のコーディングが遅い、MMX使わないとか<br>
+そういう問題の前に無駄ループが多い、<br>
+なども原因かもしれません。<br>
+<br>
+Direct3D「IM」をなんとしてでも使いたい、<br>
+それもVCで使ってみたい、<br>
+IMを直接操作するのがつらいとしても<br>
+Direct3DXクラスからの操作でいいから<br>
+使ってみたい、と思いますね。<br>
+ところが、今までのRMによるプログラミングが<br>
+あまりに簡単すぎたため、<br>
+今の段階ではまだ手も足も出ません。<br>
+RMではDirectXファイルのアニメーションを<br>
+その機能だけで実装できたため歩行やら<br>
+軽いアクションやら地面にそって歩かせること<br>
+など簡単すぎましたが<br>
+IMではそれら全て全く違う考え方で<br>
+書き直しです。<br>
+<br>
+いつになれば・・・<br>
+いつになれば実現できるのか私の夢。<br>
+<br>
+<br>
+関係ないですがもうそろそろPRビデオも<br>
+撮影開始しなければいけない時期・・・<br>
+私の考えたものは製作できるものを<br>
+過信しすぎただろうか。<br>
+<br>
+とっくに期限が切れているレポートも<br>
+提出しなければいけないがその、<br>
+テストが・・・あるから・・・その・・・ゴフッ
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-02-17T00:00:00+09:00" pubdate data-updated="true">Feb 17<span>th</span>, 2004</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mulgray.github.com/blog/blog/2004/02/17/du-riyan/" data-via="" data-counturl="http://mulgray.github.com/blog/blog/2004/02/17/du-riyan/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/blog/2004/01/20/radeon9200/" title="Previous Post: Radeon9200">&laquo; Radeon9200</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/blog/2004/02/28/zui-xin-falsetimidity%21/" title="Next Post: 最新のTiMidity++！">最新のTiMidity++！ &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/blog/2012/07/08/225228/">深刻な野菜不足</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/03/30/225136/">旅立</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/02/04/sorosorohe-tokahui-demo/">そろそろ何とか会でも</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/01/08/jailbreaker/">Jailbreaker</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2011/03/16/dong-bei-di-fang-tai-ping-yang-chong-di-zhen/">東北地方太平洋沖地震</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mulgray">@mulgray</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mulgray',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/blog/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

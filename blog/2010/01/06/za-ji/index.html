@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>雑記 - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="最近気にとめた電気・情報系の話＋αです。
+私日記であまりこういうこと書きませんが、多分書く時間がなかっただけだと思います。 ・Windows GodMode 参考
+http://japan.cnet.com/news/ent/story/0,2000056022,20406124,00.htm &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mulgray.github.com/blog/blog/2010/01/06/za-ji/">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mulgray.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">雑記</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-06T00:00:00+09:00" pubdate data-updated="true">Jan 6<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content">最近気にとめた電気・情報系の話＋αです。<br>
+私日記であまりこういうこと書きませんが、多分書く時間がなかっただけだと思います。<br>
+<br>
+<br>
+・Windows GodMode<br>
+<br>
+参考<br>
+http://japan.cnet.com/news/ent/story/0,2000056022,20406124,00.htm<br>
+<br>
+Windows 7, Vistaの隠し機能的なものが発見されたらしい。<br>
+フォルダを作成し、フォルダ名を<br>
+GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}<br>
+にするとそのフォルダからコントロールパネルの全ての機能にアクセスできるようになる、というよりコントロールパネルそのものになる模様（見え方は違うが）。<br>
+試してみたが、予めファイルを入れておいたフォルダでフォルダ名を変更すると、やはりただのコントロールパネルになり、入れてあったファイルが見えなくなる。再び別のフォルダ名に変更すると普通のフォルダに戻り、入れてあったファイルが見えるようになる。<br>
+また、フォルダ名の前半部GodModeの文字を別の物にしてもコントロールパネルのショートカットになるが、GodModeにしておくとアイコンまでコントロールパネルのアイコンに変化する模様。<br>
+<br>
+これだけだと何も便利なことはないが、Windowsの恐らくExplorerあたりがフォルダ名だけからIDを認識するという挙動は何か面白いことに使えそうな気はしなくもない。<br>
+<br>
+<br>
+・Clarkdale<br>
+<br>
+1月7日にIntelの新CPU、コードネームClarkdaleが発表される。<br>
+概要としては、32nm、DualCore、GPU内蔵、メモリコントローラ内蔵。<br>
+ただしGPUとメモリコントローラはQPI接続、CPUダイ上で統合されてはいない。<br>
+<br>
+ついに32nmプロセス技術のCPUがメインストリームに到来し、Core2Duoはこれに置き換えられると言われている。<br>
+しかしせめてメモリコントローラはダイ上で統合して欲しかった。<br>
+せっかくの32nmだが、GPUのせいで2Coreに留まった上にTDP上昇も相まって45nmのi5-750(Lynnfield)に勝てない。<br>
+これだったらLynnfieldをそのままシュリンクして32nm版出してくれた方が個人的には嬉しかった。<br>
+<br>
+だがこれから新たにPCを買う人で、GPU性能がそれなりにHD動画再生とネットゲームできる程度であればいいような人というのはむしろ多いはずで、そういう人にとってはチップ一つ減ることの恩恵は大きいかも知れない。価格も消費電力もサイズも抑えやすい。<br>
+<br>
+<br>
+・Arrandale<br>
+<br>
+コンセプトはClarkdaleと同じで、同世代アーキテクチャ。こちらはノートPC向け。<br>
+低消費電力特化で、CPUコアのみならずGPUコアまで負荷に応じた動的周波数変更がされる。<br>
+最近はAMD社ATI Radeonなども動的周波数変更で大幅な消費電力の低下を行っているが、近年はプロセス微細化も相まってこういったプロセッサの低消費電力化がどんどんと進んでいて良い傾向だと思う。<br>
+CPU側の進化によりIONプラットフォーム以上の3Dパフォーマンスが出るが、アイドル時はIONプラットフォームより格段に低い消費電力を実現するらしい。<br>
+ゲームも出来るけど、仕事で長時間のバッテリー駆動もできる、といったノートPCが今後出てきそうだ。<br>
+<br>
+<br>
+・Pine Trail<br>
+<br>
+新Atom。GPU統合型CPU。相変わらずVTがサポートされないのが残念。何故かAtomはZシリーズがVT対応で、私のVAIO PもVTを有効化できた（BIOS改造にて）が、寧ろ使いたいのはMini-ITXプラットフォームの方。小型サーバーでOSを複数同時に動かす需要があるのだが…。全てLinuxで完結するようにして、GPUを含まないAtomでサーバーを立てるか。それともCore2をダウンクロックさせて小型省電力サーバーに使うか…。元々このAtomも以前のAtomも、自宅サーバーを省電力なもので作りたいとかいうマイナーすぎる用途向けではなく、家庭で使うPCにもう従来以上の性能が要らないから価格・サイズ・消費電力を抑えたいという人向けだとは思う。<br>
+<br>
+<br>
+・Nexus One<br>
+<br>
+ついにGoogleのスマートフォンが出た。<br>
+Googleの強みはAndroidがソフトウェア側のモバイルプラットフォームとしてオープンな点にあるので、Google自社製ハードというのは意外だったが、この場合これが一番性能が良いとかいうよりリファレンスデザインになることが重要なのかも知れない。PCが色々なメーカーから同じOSを搭載したものが発売されているのと同様、Android携帯もまた色々なメーカーから同じAndroidを搭載したものが発売される形態。iPhoneはMacと同じ路線を行くから、携帯界はApple、Microsoft、Googleの3強＋αの世界、PC界はChrome OSによってApple、Microsoft、Linux、Googleの4強＋αとなるのか。で日本の携帯の多くはこの表記だとαの方に入っている気がする。むしろApple、Microsoft、Google、日本と書けそう。何故日本はオープンでグローバルなプラットフォームを作らないのだろう。著作権問題？ライセンス問題？技術漏洩の防止？技術開発に急ぐあまり互換性不足？うーん。他所より物事への着手は早いのに勿体ない。<br>
+<br>
+<br>
+・BTstack Keyboard<br>
+<br>
+今はiPod touchやiPhoneでBluetoothが利用可能で、実際、私の持っているヘッドフォンMM450は電源を入れると自動的にiPod touchと接続し、音楽再生のみならずiPodの音が聞ける。しかしiPodやiPhoneに限らず世の中のBluetoothスタック（プロトコル）は基本的に限定的で、ワイヤレスキーボードをiPod、iPhoneに接続して使うことはできなかった。しかしJBすることによって使えるオープンなスタックBTstackによって遂に念願の外部キーボードが実現した。私のpomeraのお役ご免は秒読みである。いやもう既にVAIO Pによって葬られたか。今年あたり、ATOKのiPod、iPhone版が出る可能性が高いので、それが出たらもう完全にiPodでプレゼンメモをとれるようになる可能性が高い。それだけでなく既にあるIMクライアントとかでチャットし放題、Twitterクライアントでつぶやき放題だ。なんて素晴らしいんだ！！JustSystemsさん、早く出してくれ！！一万円以下なら買うから！！そのうちVAIO PがiPod touchによって葬られそうで怖い。<br>
+<br>
+<br>
+・OptiX, SceniX, CompleX, PhysX<br>
+<br>
+PhysXは64bit版がリリースされるらしい。何が変わるんだろう。<br>
+OptiXは遂にリリースされましたね。リアルタイムレイトレーシングということで、非常に興味はあります。Quadro持ってないけど…。E研で買ってくれないかな。<br>
+<br>
+<br>
+・Suicidator City Engine<br>
+<br>
+何でこんな名前なのか、意味は何か、誰か語学詳しい人教えてください。<br>
+さておきこの都市ジェネレーターは凄い。気付くのは今更感があるが、凄い。<br>
+Terragenとか使っている人には是非試してみて貰いたい。<br>
+自動で町並みのCGをかなりそれっぽく実現してくれる。<br>
+しかし100万ポリゴンとか軽く生成してくれるのでマシンパワー必須。<br>
+でもしょうさんならできるでしょう。<br>
+http://arnaud.ile.nc/sce/<br>
+<br>
+<br>
+・SD Wave Player<br>
+<br>
+最高音質のミュージックプレイヤーを作りたいという個人的な野望から、時々調べ物をしているのですがついに参考になりそうなものを見つけました。<br>
+http://embdev.net/articles/ARM_MP3/AAC_Player<br>
+これは作りたい。作る。絶対作る。今年絶対作る…ッ！！<br>
+こういうことをやっている日本語文献は本当にいくら探しても全然見つかりません。<br>
+でAT91SAM7S256を手に入れたいと思いググってみたところ最初に出てきたのが<br>
+http://www.besttechnology.co.jp/modules/onlineshop/index.php?fct=photo&p=9<br>
+半田付けで楽をする（このCPUだけは、基板への半田付けが超微細なため回避したいという意味）ならこういうのになるが高い…。チップ単体だと<br>
+http://www.leocom.jp/AT91SAM7S256-AU-001/ATMEL/各種IC/マイクロコントローラ/注文コード/1095460<br>
+ここまで安い。やっぱりこっちかな…。今にもポチりそう。課題山積みなのに…。<br>
+<br>
+このCPUは32bit、ARM7で確かgccが使える。こんなに小さいのに55MHzで駆動。<br>
+PICマイコンより遙かに早く、天と地ほどの差がある。<br>
+これなら普通にウェーブテーブルシンセサイザーも作れるのかも知れない。<br>
+あとは…BeagleBoardよりも小さなLinuxクライアントをこういうミニチップで自作したい。<br>
+で学校に埋め込んだりネットワークトンネル掘ったりして遊びたい。魔法使いになりたい。<br>
+<br>
+…いや、AIの勉強しないと。<br>
+<br>
+何に使うのか知りませんがこんなのもあります。凄すぎる。<br>
+http://journal.mycom.co.jp/news/2009/11/25/003/<br>
+<br>
+<br>
+・FM Synthesizer<br>
+<br>
+http://www.youtube.com/watch?v=m8NI2O85wEU<br>
+YAMAHAのFM音源IC YM2151をArduinoのShield化したのか？！凄すぎる。<br>
+音良いなあ…これ何かに使えないかな…。<br>
+<br>
+FM音源は携帯にも搭載されているけど、作曲に使えない。<br>
+携帯のアプリ市場が完全なガラパゴス環境なせいで、iPhoneと違って自由に欲しいアプリが作れない、出回らない。iPhoneなら作曲、保存、シンセサイザーとしての利用はやろうと思えば出来るけど、日本の携帯はそれができない。技術的には可能なはずなのに、アプリがない。改造しようにもスマートフォンでなければ無理。<br>
+ならばiPhoneにこのFM Synthesizerを付けて、アプリ作って、外出先でFM音源いじるのも一興か。<br>
+でもiPhoneだと既にソフトウェア音源として近いアプリがあるからハード的に努力する意味ないか。
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-06T00:00:00+09:00" pubdate data-updated="true">Jan 6<span>th</span>, 2010</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mulgray.github.com/blog/blog/2010/01/06/za-ji/" data-via="" data-counturl="http://mulgray.github.com/blog/blog/2010/01/06/za-ji/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/blog/2010/01/01/1011/" title="Previous Post: 1011">&laquo; 1011</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/blog/2010/01/19/ming-ri-2/" title="Next Post: 明日">明日 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/blog/2012/07/08/225228/">深刻な野菜不足</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/03/30/225136/">旅立</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/02/04/sorosorohe-tokahui-demo/">そろそろ何とか会でも</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/01/08/jailbreaker/">Jailbreaker</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2011/03/16/dong-bei-di-fang-tai-ping-yang-chong-di-zhen/">東北地方太平洋沖地震</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mulgray">@mulgray</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mulgray',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/blog/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

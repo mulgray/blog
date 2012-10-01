@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>DAC - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="ふと思った。
+超高級ICを使ったDACを自作して母のコンポ一体型CDプレーヤーの光出力に繋げばあれも超高級オーディオ機器に早変わりする…はず。スピーカーとアンプはかなりいいやつ使ってるし…。 通信工の方（情報工でも生きの良い人がいれば是非）、もし興味があれば技術力を貸して下さい。共同研究を &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mulgray.github.com/blog/blog/2008/09/09/dac/">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mulgray.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">DAC</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-09-09T00:00:00+09:00" pubdate data-updated="true">Sep 9<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content">ふと思った。<br>
+超高級ICを使ったDACを自作して母のコンポ一体型CDプレーヤーの光出力に繋げばあれも超高級オーディオ機器に早変わりする…はず。スピーカーとアンプはかなりいいやつ使ってるし…。<br>
+<br>
+通信工の方（情報工でも生きの良い人がいれば是非）、もし興味があれば技術力を貸して下さい。共同研究を。<br>
+<br>
+————<br>
+<br>
+最近、趣味で音響関係に若干はまっている。<br>
+私の場合は専門知識はそれ程なく、本格的にのめりこんでいる人に比べれば何も知らないに等しいが、それなりに私もそういう人の雰囲気がわかる。<br>
+<br>
+特にデジタルオーディオは面白い。<br>
+原本のデータであるデジタル信号をアナログ信号、実際の波形に変換する際にDAC（Digital to Analog Converter、デジタルアナログ変換器）というものを通して変換するのだが、このDACの役割をするICや回路、そして変換後のアナログ信号が通る回路次第で音質が驚くほど変化する。<br>
+<br>
+<br>
+以前にSC-88Proを改造して光デジタル出力を付けたが、改造をする前のSC-88Proも内部にあるDACの役割をするICで出力波形を変換していた。<br>
+そのICはバーブラウン社のPCM69AUというもので、それなりに音は良い。<br>
+<br>
+ここで改造した光デジタル出力から内部データをそのまま引っ張り出してONKYOのSE-200PCIでDACを通してER-4Sで聴いてみた。<br>
+こうすることでSC-88Proのアナログ出力がウォルフソン社のWM8740というDACを積んだSE-200PCIになり、SC-88ProにSE-200PCIを組み込んだ形になる。VLSC付きのSC-88Proだ。<br>
+デジタル信号のクロックはSC-88Pro側に同期。<br>
+SE-200PCIはクロックもずっと性能がいいが、これは直結では機能させられない。<br>
+<br>
+聴いてみたところ、明らかに音が違いすぎて驚いた。<br>
+SC-88Pro本体のアナログ出力を直接ER-4Sで聞くと結構低音が纏まって出てくる感じなのが、SE-200PCI側で聴くと高音の残響音が良くわかる上に低音が随分とお淑やかな感じになる。個々の音がはっきり聞き取れる。<br>
+<br>
+<br>
+そして今回MU2000の音も聴いてみた。<br>
+実はアナログ変換以前にMU128とはかなり音質が違う。勿論MU2000の方が上である。<br>
+MU2000とSE-200PCIで比較するとMU2000も音がぼやけて溶けていた。<br>
+SE-200PCI側では音を識別しやすくなる。音程もわかりやすい。<br>
+MU2000はDACはわからない。分解すればわかるが最初から光出力できる機器でそこまでする意味がないのでしていない。<br>
+<br>
+<br>
+まぁ今時となってはこれらの古の高級機器（昔はどちらも10万円級）も音の領域があまり広くない。<br>
+MU2000側にはDRなども刺さっているが、DRに関しても当然ながらVSTやSoundFontのサンプリング音源には負ける。<br>
+<br>
+<br>
+現時点での接続状況は<br>
+SC-88Pro光→X-Fi→E-MU 0404 PCI→SE-200PCI<br>
+MU2000光→E-MU 0404 PCI→SE-200PCI<br>
+外部機器接続時はこうしてE-MU側でSPDIFのEXTERNAL同期で全てのクロックを合わせる。<br>
+レコーディングが終われば、RAWな波形データの再生時にはASIO4ALLを通してSE-200PCIの外部接続を切ってSE-200PCI内部クロックで再生する。<br>
+<br>
+ところでSE-200PCIはVIAのEnvy24を積んでいるため、VIAの最新ドライバを使えるが、今では従来不能だったような気がするボリュームコントロールが可能になっている。WAVEのみだが。<br>
+<br>
+そしてVIAのドライバは、良くわからないがWindowsのSRC（サンプリングレートコンバーター）という諸悪の根源、音質劣化の根源（いや根源はAC97か）の影響を受けていないように見える。<br>
+何故ならデータ再生時にサンプリングレートによって内部クロックの切り替えを行っているからだ。<br>
+（E-MUでもこれはできない。ASIOを使うにしてもサンプリングレートは指定になる。<br>
+X-Fiは完璧にSRCの影響を受ける。ASIOを使えば勝手に内部クロックの切り替えをするオーディオクリエイションモードもあるが…。）<br>
+この辺、詳しい人がいましたら情報をお願いします。<br>
+自分でレコーディングしてWaveCompare検証してもいいのですが時間が……。
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-09-09T00:00:00+09:00" pubdate data-updated="true">Sep 9<span>th</span>, 2008</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mulgray.github.com/blog/blog/2008/09/09/dac/" data-via="" data-counturl="http://mulgray.github.com/blog/blog/2008/09/09/dac/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/blog/2008/09/08/rizumu-2/" title="Previous Post: リズム">&laquo; リズム</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/blog/2008/09/11/cd/" title="Next Post: CD">CD &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/blog/2012/07/08/225228/">深刻な野菜不足</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/03/30/225136/">旅立</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/02/04/sorosorohe-tokahui-demo/">そろそろ何とか会でも</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/01/08/jailbreaker/">Jailbreaker</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2011/03/16/dong-bei-di-fang-tai-ping-yang-chong-di-zhen/">東北地方太平洋沖地震</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mulgray">@mulgray</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mulgray',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/blog/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

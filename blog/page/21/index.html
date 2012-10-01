@@ -1,0 +1,766 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="グーグルインクから60円の入金がありました。ホントにイーバンク対応してるんですねぇ。
+これでついにHylosでもAdSenseが使えるようになりました。
+現在既に導入済みです。
+AdSenseの管理画面は日本語化されていて非常に使いやすいんですが気になる点が一つ。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mulgray.github.com/blog/blog/page/21/">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mulgray.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2007/07/24/google-adsense/">Google AdSense</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-07-24T00:00:00+09:00" pubdate data-updated="true">Jul 24<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">グーグルインクから60円の入金がありました。ホントにイーバンク対応してるんですねぇ。<br>
+これでついにHylosでもAdSenseが使えるようになりました。<br>
+現在既に導入済みです。<br>
+AdSenseの管理画面は日本語化されていて非常に使いやすいんですが気になる点が一つ。<br>
+ヒントがランダムに出てくるんですがその中にこんな文章が。<br>
+<br>
+<blockquote><br>
+ログインを要求するページで AdSense を使用しますか? Google のサイト認証機能を使用して、おコンテンツをクロールできるようにしてください。</blockquote><br>
+<br>
+おコンテンツ…。<br>
+<br>
+<br>
+話変わりますが明日の情報処理1ってどうなるのか知ってる人いますか？空き？<br>
+あー製作実験ノートが終わらなくてやばいな…
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2007/07/22/sabazheng-bei/">サーバー整備</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-07-22T00:00:00+09:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">サーバーのOSをFedora Core 6からFedora 7に入れ替えました。<br>
+色々と今までのインストール状態が良くなかったのでクリーンインストールしました。<br>
+<br>
+<br>
+さらにWordPressのバージョンも最新のものに入れ替えました。<br>
+そして以前相当苦戦していたパーマリンク設定に成功しました。<br>
+他にも色々調子良くなってます。<br>
+[追記]携帯にも正式対応しました。一応。<br>
+<br>
+パーマリンクの設定で自動生成される.htaccessがどうも上手く動かないので<br>
+/etc/httpd/conf.d/system-config-httpd.conf<br>
+の中にディレクトリタグを書き、その中に自動生成された.htaccessの内容をコピペしたら上手くいきました。速度的にもこの方がいいらしいです。<br>
+例えばこんな感じになります。<br>
+<br>
+&lt;directory &quot;/var/www/html&quot;&gt;<br>
+&lt;ifmodule mod_rewrite.c&gt;<br>
+RewriteEngine On<br>
+RewriteBase /<br>
+RewriteCond %{REQUEST_FILENAME} !-f<br>
+RewriteCond %{REQUEST_FILENAME} !-d<br>
+RewriteRule . /index.php [L]<br>
+&lt;/ifmodule&gt;<br>
+&lt;/directory&gt;<br>
+<br>
+mod_rewriteっていうのはURLをいじくれる強力なツールみたいです。<br>
+これを利用してWordPressのパーマリンク機能を実現しているみたいです。<br>
+<br>
+<br>
+<br>
+ところでさっき見つけたんですが<br>
+<a href="http://www.watch.impress.co.jp/akiba/hotline/20070721/p_etc.html">http://www.watch.impress.co.jp/akiba/hotline/20070721/p_etc.html</a><br>
+これ凄くないですか…？！<br>
+何いきなり3万円値引きしてるんですか…つかほぼ半額…<br>
+<br>
+しかし面白いことになってきましたね。もうマルチコアの時代なんですね。<br>
+2007年中に、4コアCPUを搭載するPCは当たり前になりそうです。
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2007/07/19/jin-kuang/">近況</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-07-19T00:00:00+09:00" pubdate data-updated="true">Jul 19<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">近況をバラバラに書いてみるてすと。<br>
+全てを理解できた人にはスマイルを一つあげよう。<br>
+<!--more続きはこちら--><br>
+<br>
+心配していた水曜の情報処理の試験はきっと会心の出来であろう。<br>
+2問は間違いなくミスったけども。<br>
+<br>
+回路理論全くついて行けなくなりました。<br>
+さすがは履修者の7割が落とす科目…専門なのに。<br>
+特にベクトル記号法から先はもう外国語。<br>
+たすけて…誰か…<br>
+<br>
+製作実験のノート作りが面倒すぎ。<br>
+全くやる気起きない。どうしよう。データはあるんだけども。<br>
+<br>
+連日、落とし物を確認していたら<br>
+今日、化学の教科書2冊を発掘。<br>
+しかしどちらも私が授業を受けていた教室からのものではなく、ノートも無かった。<br>
+このままだと死ぬ…。しねばいいのに。<br>
+<br>
+学校の図書室の本を余裕で6週間借りてたらついにメールで督促が来た。そろそろ丸呑みして返さなければ。<br>
+<br>
+知り合ったばかりのPCに強そうな人にPC関係の話をしまくってみたら工業高校出身と勘違いされた。<br>
+普通科理系出身の独学なのでよろしく…<br>
+<br>
+メインマシンで動かしているFedora 7が異様に安定している。<br>
+AIGLXが優秀過ぎ。Berylを動かしてCube状態の時に3D描画プログラムを重ねて走らせても全くパフォーマンスが見劣りしない。Displayの競合もない。<br>
+Wineも近年長く存在した多くのバグが綺麗さっぱり無くなった。OpenGLのWrapperも卒倒するほど優秀。まさかdebrisが動くとは思わなかった。<br>
+<br>
+これからサーバマシンの方のFedoraをFedora 7に入れ替えようかと検討中。<br>
+ついでに動作が細かいところで色々と不振だったWordPressを見直し、また他のCMSとしてDrupalを入れてみる予定。<br>
+<br>
+前期中にはcg言語の研究がついにできなさそうな予感。<br>
+同学科の三郎がガリガリとC言語系列（無印とか++とか#とか）を独学でオールマスターし始めたので少し焦る。（何<br>
+<br>
+ここはcgは諦めて今から人工知能の研究するべきか…。<br>
+<br>
+さてインストール中にドップラー動体検知センサーのハンダ付け作業を進めないと…<br>
+<br>
+これ実は私が電灯をつけたまま眠ってしまう現象を回避するためのもの。（ぇ<br>
+指定した時間帯に部屋内の動体が動作を一定時間以上停止したら赤外線操作で電灯を消すようにサーバー側にプログラムを書いて、サーバーにこのセンサーをつける。<br>
+認識方法は暫定的にリレー+USBオーディオデバイスを用いる予定。もっと良い方法あるんだけど生憎材料がない。<br>
+非常に手間のかかる課題だ…。（何
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2007/07/17/shuang-yan-jing-dot-dot-dot/">双眼鏡…</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-07-17T00:00:00+09:00" pubdate data-updated="true">Jul 17<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">今日は2限まで受けたら帰ってしまいました。<br>
+翌日の試験がやっぱり不安だったため。<br>
+<br>
+<br>
+<a href='http://www.hylos.info/wp-content/uploads/2007/07/sn380025.JPG' title='sn380025.JPG' class="highslide" onclick="return hs.expand(this)"><img src='http://www.hylos.info/wp-content/uploads/2007/07/sn380025.thumbnail.JPG' alt='sn380025.JPG' /></a><br>
+突然兄が面白いものを手に入れたから私にもくれると言うのでどんなものかと思ったら特殊なデジカメだった。<br>
+とにかくでかい。でかすぎる。<br>
+<br>
+これデフォルトで8倍ズーム状態。近くのものとか室内のものはまず撮影できません。至近距離4mとか。<br>
+そして最大で32倍までズームされる…と思いきやデジタルズームの掛算だった模様で8倍が光学の限界。<br>
+つまりこれは光学ズームの倍率が変更できないわけですね。<br>
+<br>
+…？<br>
+何を撮れと…。これは間違いなく失敗…。<br>
+<br>
+<br>
+<br>
+そういや最近のデジカメ凄いですね。<br>
+H.264/AVCのエンコードまでできるものがあったり。<br>
+EX-V7とかね。普通にSDビデオカメラとしても使えそう。
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2007/07/16/uwa-dot-dot-dot/">うわ…</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-07-16T00:00:00+09:00" pubdate data-updated="true">Jul 16<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">今更ですがHylosにAkismet導入しました。<br>
+かなり最強に近いスパムブロッカーだとか。期待。<br>
+<br>
+全然関係ないですが<a href="http://maker.usoko.net/nounai/">脳内メーカー</a>使ってみました。<br>
+最近各所でかなり流行ってるんですよねこれ。<br>
+<br>
+まずはハンドルネーム。<br>
+<a href="http://www.hylos.info/wp-content/uploads/2007/07/mulgray.gif" title="Mulgray"><img src="http://www.hylos.info/wp-content/uploads/2007/07/mulgray.thumbnail.gif" alt="Mulgray" /></a><br>
+これは酷い。<br>
+<br>
+次に本名。<br>
+<a href="http://www.hylos.info/wp-content/uploads/2007/07/akif.gif" title="Akif"><img src="http://www.hylos.info/wp-content/uploads/2007/07/akif.thumbnail.gif" alt="Akif" /></a><br>
+え…。<br>
+<br>
+そういや今日は確か普通に学校あるんですよね。なんでだろう（ぇ
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2007/07/14/jin-gui-tutekimasita./">今帰ってきました。</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-07-14T00:00:00+09:00" pubdate data-updated="true">Jul 14<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">今日はこんな酷い雨なのに28人くらい射場に来てました。<br>
+地面は酷いぬかるみで、私は一度転んでしまって、左手の、去年骨折したばかりのところを強打し、今も痛んでます…。<br>
+<br>
+明日は納射です。<br>
+<br>
+前日の夜になるまで翌日の集合時間等わからない制度っていうのはなんとかならないものか…。別に問題はないけど…。<br>
+<br>
+明日は9時集合。ただし一年は準備を8：45までに終えなければならない。<br>
+そして日曜は学バスがない…！<br>
+<br>
+よって我々は8時くらいには駅についてないといけないわけですね。<br>
+私は少なくとも6時半には家を出ないと…！？<br>
+<br>
+ところで雨凄いですよね。<br>
+明日台風凄くなりますよね。多分。<br>
+<br>
+電車とか余裕で止まってくれそうな気がしてならないんですが…。<br>
+<br>
+明日どうなるんだろう。
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2007/07/13/te-nihe-monairi/">特に何もない日</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-07-13T00:00:00+09:00" pubdate data-updated="true">Jul 13<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">今日は授業が1限しかない曜日です。<br>
+履修戦争で授業が全然取れなかった曜日です。<br>
+<br>
+でも今朝その1限の化学の教科書とノートが完全に消滅していることに気付きましたよ。<br>
+完全に無くした…テスト直前に…。忘れ物・落とし物として回収されてないか明日確認しなければ。<br>
+<br>
+<br>
+前期最後の課外英会話授業は数人で双六しながらマス目に書いてある話題について英語で話していくというものでした。<br>
+<br>
+＊：&#8221;last time when you had some exercises&#8230;&#8221;<br>
+T：&#8221;I did the Billy&#8217;s Boot Camp yesterday&#8230;&#8221;<br>
+＊：&#8221;Really?! How did you feel? How was it like?&#8221;<br>
+T：&#8221;During the exercise, I had felt it hard but after that I felt happy&#8230;&#8221;<br>
+まさかやってる人がいるとはｗ<br>
+<br>
+<br>
+英会話の後、情報リテラシーの授業がわからないと言う2人に別の時間帯にそれぞれ30分づつ授業をやってから帰りました。つか私がのんびり30分で教えられる内容を90分で教えられない先生ってどんだけｗ<br>
+<br>
+情報リテラシーなんかでも一応ウェブページ作るんですよね。内容を自己紹介のページにしろと、限定されてしまっているのが非常に残念ですが。<br>
+<br>
+私はウェブページ作れと言われたらどんな凝ったスクリプトとかその他書こうかと計画を練りに練るつもりだったんですが、なんと情報リテラシーの方ではウェブページは印刷して提出ですよ。例えどんなに技術尽くしても見た目でしか評価してもらえないｗｗｗうはｗｗおｋｗｗつかそれウェブページ以外の手法でそれっぽく凝ったデザイン描いて印刷する人がいても多分わからない…！
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2007/07/12/ti-li-woxiao-fei-siteqing-bao-wotong-xin-surufang-fa/">体力を消費して情報を通信する方法</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-07-12T00:00:00+09:00" pubdate data-updated="true">Jul 12<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><a href="http://www.hylos.info/wp-content/uploads/2007/07/sn380020.JPG" title="sn380020.JPG"><img src="http://www.hylos.info/wp-content/uploads/2007/07/sn380020.thumbnail.JPG" alt="sn380020.JPG" /></a><br>
+最近、この手のものとしてはあまりの安さについカッとなって買ってしまった手回し充電器。<br>
+これ意外と使えます。<br>
+<br>
+3社の携帯を充電できるコネクターも付属してるし、iPodとかのUSB機器も充電できてライトとしても使えてサイレンも鳴ります。コンセントから携帯やUSB機器を充電することもできて万能ACアダプタになります。<br>
+<br>
+携帯とかの電池切れたら私を訪ねてくれれば貸してあげますよ。（何<br>
+ただしエネルギーの方はセルフサービスで。<br>
+<br>
+課外英会話が遂に今週で前期終了となります。<br>
+感想としては…なんかレベル低かったかなあという感が。<br>
+クラス分けテストで少し失敗したせいではあるんですが、周りの仲間の生徒が比較的レベルが…特に語彙レベルが低い気が。クラス分けテストでは文法チェックしかなかったからこういうこともあるんでしょうね。後期こんなことがあったら本部に電話かけよう。<br>
+<br>
+最後に何かパーティーがあるようです。<br>
+便乗したい人もどうぞ。（ぇ
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2007/07/11/chu-falsede-qian-%21%21%21%21%21%21/">初の的前！！！！！！</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-07-11T00:00:00+09:00" pubdate data-updated="true">Jul 11<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">最近弓道部の切り上げが早い。<br>
+3日練にもなっていくらか楽になって私はこうして日記まで書けるほどである。<br>
+<br>
+そういや硬式テニス部の人に聞いたら、テニス部では今はもう試験勉強のための休み期間に入っているんだとか。<br>
+<br>
+私は或る程度は自主練してから帰ることにしている。<br>
+それも回数を積もうというよりは、気になっていたことにけりをつける感じである。<br>
+今日も自主練をしばらくやっていたら、副将がはめじろうに的前に立たせてあげようと言っていたので、私は言われてなかったが便乗してついていった。<br>
+彼が的前で初めての一本を放つと、それは殆ど真っ直ぐ飛んで、的のすぐ近くの4時方向の安土に刺さった。中っても全然おかしくなさそうだった。<br>
+<br>
+近くでコソコソしていたら、先輩は私にもひかせてあげようと言ってくれたので、私は目を輝かせて的前に立った。<br>
+<br>
+生憎私の弓はこの学校で最弱の弓であり、事前に先輩が言うには少し上を狙わないと正直中らないと言われたが、そこは形を重視した。<br>
+<br>
+私の矢は6時。2本ひかせてもらったが6時だった。これは弓のせいにしていいんだろうか。<br>
+初の的前で中てる夢は見事に崩れ去ったわけだが、未経験者の中で2番目に的前に立てたのでよしとする。<br>
+<br>
+初の的中は写真を撮ってくれるそうである。W先輩の写真とかあるらしい。矢の刺さっている的の前でピースしている写真が。<br>
+<br>
+皆頑張ろー！！！
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2007/07/09/toeicjie-guo-toka/">TOEIC結果とか</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-07-09T00:00:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">TOEICの結果がもう返ってきました。<br>
+<br>
+今回の初めてのTOEICは体調不良で散々な結果だったわけですが。<br>
+<a href="http://www.hylos.info/?p=240">http://www.hylos.info/?p=240</a><br>
+<br>
+結局560点でした。<br>
+ちょっと不調過ぎでした。リスニングとかまるで集中できなかったので。<br>
+多分これが私のとれる最低点です。<br>
+以下詳細。<br>
+<br>
+Listening　290点<br>
+短い会話中の明確な情報からの要点推測　71%<br>
+長めの会話中の明確な情報からの要点推測　65%<br>
+短い会話の詳細理解　95%<br>
+長めの会話の詳細理解　53%<br>
+<br>
+Reading　270点<br>
+文章中の情報からの推測　39%<br>
+文章中の具体的情報の理解　58%<br>
+文書間に鏤められた情報の関連づけ　41%<br>
+語彙理解　57%<br>
+文法理解　83%<br>
+<br>
+やっぱ駄目すぎる…こんなはずじゃない…ッ<br>
+次回は大差つけてやる…！！！<br>
+今日の課外英会話では紙飛行機作って飛ばすとか今までに類を見ない遊びがありました。<br>
+私は烏賊飛行機ってのを即席で作ってみせたんですが誰も知らないとか…orz<br>
+とにかく面白い形だと言われました。形とか飛び方とかを英語で説明させられた気がする。<br>
+<br>
+帰りに剣道部の強い人と一緒に帰ってたら何故か腕の筋肉の話になって、私の腕をみたいから力を入れてくれと言われたので思いっきり入れてみせたら、<br>
+「おまえすげーよｗｗｗｗ」<br>
+と言われました。どこが凄いのか未だに良くわからないので誰か研究してくだｓ<br>
+さてこれから英語の課題やらないと。<br>
+今から明日までに洋書3冊読んでレポート書かないといけないんですけど。<br>
+洋書のページ数は合計200ちょい～300くらいですかね…。薄いんで。
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/blog/page/22/">&larr; Older</a>
+    
+    <a href="/blog/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/blog/page/20/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/blog/2012/07/08/225228/">深刻な野菜不足</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/03/30/225136/">旅立</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/02/04/sorosorohe-tokahui-demo/">そろそろ何とか会でも</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/01/08/jailbreaker/">Jailbreaker</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2011/03/16/dong-bei-di-fang-tai-ping-yang-chong-di-zhen/">東北地方太平洋沖地震</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mulgray">@mulgray</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mulgray',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/blog/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

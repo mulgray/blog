@@ -1,0 +1,913 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="今日はほとんど一日中、
+MIDIファイルの解析を
+していました・・・。
+勉強もしないと；；；
+でも明日もきっと勉強しないんだろうな；；
+マジで馬鹿になったらどうしよう・・・
+（もうなってるぞ（ぇ（やだ（早いよ MIDIファイル（SMFファイル）は最初、
+「4DH54H68H64H」で始まります。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mulgray.github.com/blog/blog/page/45/">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mulgray.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2003/04/01/midihuairujie-xi-%21/">MIDIファイル解析！</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2003-04-01T00:00:00+09:00" pubdate data-updated="true">Apr 1<span>st</span>, 2003</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">今日はほとんど一日中、<br>
+MIDIファイルの解析を<br>
+していました・・・。<br>
+勉強もしないと；；；<br>
+でも明日もきっと勉強しないんだろうな；；<br>
+マジで馬鹿になったらどうしよう・・・<br>
+（もうなってるぞ（ぇ（やだ（早いよ<br>
+<br>
+MIDIファイル（SMFファイル）は最初、<br>
+「4DH54H68H64H」で始まります。<br>
+これはAscii変換してやると<br>
+「MThd」になります。<br>
+MIDIのヘッダチャンクって意味かなｗ<br>
+これがなかったらSMFではないのです。<br>
+<br>
+そのあとデータ長を示す4バイトの<br>
+「00H00H00H06H」があります。<br>
+6バイトです。（当たり前<br>
+このあとにフォーマットを示す2バイト、<br>
+トラック数を示す2バイト、<br>
+分解能を示す2バイトが来るので<br>
+6バイトです。絶対。<br>
+<br>
+そのあとに（たぶん全てのSMFで）<br>
+「4DH54H72H6BH」が来ます。<br>
+Ascii変換すると「MTrk」です。<br>
+トラックの意味そのままですねｗ<br>
+そのあとバイト長が示されるので<br>
+その長さ分、バイト長以降のバイトを<br>
+取得すればいいわけですね。<br>
+この場合、メタイベントのトラックでした。<br>
+おれの作った「FF7Flower.mid」では<br>
+「00FF0207416B6966756D6900FF031E466C6F<br>
+　7765727320426C6F6F6D696E6720696E20746<br>
+　8652043687572」となっていました。<br>
+00Hは区切りなんでしょうねぇ・・・<br>
+よくわかりません；；<br>
+そのあとのFFHはメタイベントを示します。<br>
+Asciiに変換してやると、<br>
+「Akifumi ＀ Flowers Blooming　・・・」<br>
+とかなっていますｗ<br>
+今日はこの辺まで・・・<br>
+16進数とかいってもうやだ；；
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2003/03/30/iroiroto%3B%3B/">いろいろと；；</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2003-03-30T00:00:00+09:00" pubdate data-updated="true">Mar 30<span>th</span>, 2003</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">今日バイオリンとピアノとの<br>
+合わせでの練習をしました。<br>
+・・・合奏も独奏も心配だ；；<br>
+大丈夫だろうか・・・<br>
+コンサートは4月末に迫っている；；<br>
+<br>
+ところで、<br>
+今日はそれ以外の時間はやはり<br>
+プログラミングに没頭していましたｗ<br>
+やっぱファイル操作の基本ぐらい<br>
+できなきゃやばいな～、てことで<br>
+バイナリエディタを作りました。<br>
+<br>
+バイナリとはBinary、2進数です。<br>
+本当は1101…とかなるんですが<br>
+扱うときは16進数に変換します。<br>
+そりゃ、扱うとき1と0をマジで扱ったら<br>
+頭パンクしますよ。（できる人もいますが<br>
+<br>
+2分ぐらいでもうできあがったんですが<br>
+も～遅い遅い・・・；；；；<br>
+わけわからないぐらい遅いです。<br>
+たった1kbぐらいのファイルでも<br>
+たぶん30秒ぐらいかかるでしょう。<br>
+千回もカウンタ回しますから；<br>
+<br>
+原因はVBの文字連結。<br>
+Textboxとか用意して、<br>
+「Textbox1.Text = Textbox1.Text & Hex」<br>
+とかやってたら馬鹿みたいに遅いです。<br>
+（馬鹿って遅いの・・・？）<br>
+しょうがないからバイト変数より<br>
+リアルタイムに呼び出す方式をとります。<br>
+一度PictureboxにPrintして一覧して<br>
+みましたが、めちゃ速いですね。<br>
+<br>
+なんでだろ～ぉ なんでだろ～<br>
+なんでなんでだろ～（逝ってよ<br>
+<br>
+あ、ちなみに今やっていることは後に<br>
+MIDIシーケンサーやゲームを作るとき<br>
+必須の技術となります。<br>
+だからおれなりに極めたいということです。
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2003/03/28/directdraw%21/">DirectDraw！</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2003-03-28T00:00:00+09:00" pubdate data-updated="true">Mar 28<span>th</span>, 2003</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">ああ・・・<br>
+なんてややこしいんだ<br>
+DirectDraw！<br>
+おとといの日記で<br>
+「明日あたり説明する」<br>
+みたいなことを<br>
+書いていましたが、結局研究に2日も<br>
+費やしてしまいましたYO（馬鹿<br>
+<br>
+えっとですね・・・<br>
+なんとも不思議なことに、<br>
+ウインドウモードだったらDirect3DRMは<br>
+プライマリサーフェイスからCreateDeviceを<br>
+実行しなくても、Clipperだけで<br>
+描画することができてしまうんです。<br>
+ここに落とし穴が・・・ｗ<br>
+<br>
+メニュー表示にはDirectDrawを使います。<br>
+Bltまたはフリップしてあらかじめ用意した<br>
+ベース画像を出すように組んでいきます。<br>
+ところがですね、<br>
+ウインドウモードだからといって、<br>
+バックサーフェイスもプライマリサーフェイスも<br>
+ろくに定義せずにプログラム組んでいたら<br>
+「どこにベースを転送するんじゃ～！！」と<br>
+頭が爆発いたしました。（ぇ<br>
+<br>
+解決法は簡単。<br>
+面倒ですがサーフェイスを作ります。<br>
+プライマリとセカンダリ(バック)サーフェイス、<br>
+そしてメニューベース画像保持用サーフェイス。<br>
+RMはちゃんとこのバックサーフェイスに作り、<br>
+メニューなどの必要オブジェクトを全てBltし、<br>
+さらにBltを使い、全部整ったバックから<br>
+プライマリへ転送します。<br>
+これで完璧。エフェクトなども楽勝。<br>
+なぜこれが必要なのかは、<br>
+実際にプログラムを組むとわかります。<br>
+プライマリへ直接Blt（さっきから出ているが<br>
+これはブリットの略）すると、表示まで<br>
+間に合わずにちらつきが出てしまいます。<br>
+かなりこれ、目に悪いです。<br>
+というわけで、綺麗な表示のためには<br>
+予備サーフェイスが必須のようです。<br>
+<br>
+あと・・・<br>
+Rectについてですが・・・<br>
+実は、ウインドウのHeight、WidthやLeft、Topの<br>
+単位はTwipsといって、よく画面解像度に<br>
+ある「640×480」とはぜんぜん値が違います。<br>
+これをどうやってRect型に入れるか。<br>
+微妙に悩みました・・が、<br>
+どういうわけか15分の1にすると<br>
+ちょうどピクセル単位になります。<br>
+あっさり解決しましたｗ<br>
+あと、タイトルバーとか、ウインドウの<br>
+クライアント領域の外側に当たる部分が<br>
+微妙な幅を占めているのでこれを考慮する<br>
+必要がありました。WindowsXPではやけに<br>
+これが大きいので、ウインドウスタイルは<br>
+通常にしてはいけませんね。<br>
+なかなかこれは調整が微妙で、<br>
+何度か実行して決めます。<br>
+<br>
+そんなところかな・・・<br>
+今日はいろいろとデバイスや<br>
+ディスプレイモードの列挙とか<br>
+インプットデバイスの列挙とか<br>
+できるようになりました。<br>
+まぁまあ進歩したってところでしょう。<br>
+ゲームが出来るまではまだ遠いですね。<br>
+監督が、春休み中に完成させるぐらいの<br>
+意気込みでいてくれればこちらとしても<br>
+本気が出るんですがね。
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2003/03/26/kiwadoha%5Bpitukingu%5D-%21/">キーワードは「ピッキング」！</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2003-03-26T00:00:00+09:00" pubdate data-updated="true">Mar 26<span>th</span>, 2003</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">やったー！！<br>
+キター！！<br>
+Quitar！！<br>
+（黙れ・・）<br>
+<br>
+ついに地形の高さに沿ってキャラクターを<br>
+歩かせることに成功しました！ｗ<br>
+<br>
+なんかほとんどの参考書とかHPとかでは<br>
+キャラの、地形上のY座標を割り出すのに<br>
+変数用意して、三角ポリゴン割り出して、<br>
+その座標格納して、面上のY座標をさらに<br>
+計算によって割り出して・・・とか<br>
+無駄なことやってるんですが、<br>
+RMの機能をいろいろ模索していたら<br>
+「Pick」というものを発見し、<br>
+それが結局、非常に効率的な方法だと<br>
+わかったのです。<br>
+<br>
+「Pick」のほかに、それに類するもので<br>
+「RayPick」があります。<br>
+それを今回使うことにしました。<br>
+<br>
+RayPickは、シーンフレーム（ワールド）上の<br>
+座標を指定すると、その座標から<br>
+あらかじめ指定された向きに光線（たとえ）<br>
+を放ちます。<br>
+それと交差するポリゴン面の情報を<br>
+Direct3DRMPick2Array型で返してきます。<br>
+そして、それにvPositionを問いただせば<br>
+座標がわかるというものです。<br>
+<br>
+毎シーンごとにRayの座標を<br>
+キャラクターのX、Z、そしてY+10（適当ｗ）<br>
+に設定し、姿勢はベクトル型で（0,-1,0）に<br>
+設定（下向きです。左からx,y,z軸）し、<br>
+LandscapeからRayPickを使い、<br>
+そのRayとLandscapeの直交する面を求めれば<br>
+ハイ、終了。<br>
+<br>
+こんなにも簡単な、すばらしい関数が<br>
+存在しているとは・・・<br>
+なんでもっと早く気づかなかったんだ；；<br>
+今まで数学に励んでいたのはなんだったんだ；<br>
+（別にたいした労力かけたわけじゃないが）<br>
+<br>
+ただ、なんだか知らんがこのRayPickって、<br>
+ひとつ前のシーンより低いY座標が<br>
+割り出されたときにちゃんと値が下がりません。<br>
+なので、重力計算っぽいものが要ります。<br>
+つまり、常に下に向かって押し付けるのです。<br>
+追記：このY座標が下がらないのは<br>
+　　　実は影フレームにRayPickがあたったからでした。<br>
+　　　間違った説明すみません。<br>
+<br>
+今回はそれについては実に簡素な方法を<br>
+とることにしました。<br>
+RayPickで求めたY座標から1だけ引いてると<br>
+ある値で必ずとまります。それは、<br>
+キャラのY座標が地面に直交するからです。<br>
+この性質を利用します。<br>
+追記：実はこれも間違い。<br>
+　　　理由は上の追記と同じ。<br>
+<br>
+つまり、毎回、Y座標を-1してるだけで<br>
+いいのです。<br>
+<br>
+実際に実行してみると、なんだかマリオ64を<br>
+思い出させる動きをします。<br>
+キャラが、乗っていた物体から離れる（落ちる）<br>
+と、一定の速度で下にキャラが引っ張られます。<br>
+これには結構感心しました。<br>
+何も考えずに重力計算が出来たような気に<br>
+なれますｗ<br>
+<br>
+ああ・・・あの4000円の本とか<br>
+3Dの数学書（1万2000円）とか<br>
+買わなくても一人で出来た・・<br>
+衝動買いしなくて良かった、ホント。<br>
+では、今日はこの辺で。<br>
+明日あたり、DirectDrawのお話が<br>
+聞けるかもしれませんよ。<br>
+<br>
+（でもな～、テニスとかバイオリンとか、<br>
+　習い事も絶えないんだよな～・・・<br>
+　あ～忙しい。）
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2003/03/25/puroguraminguhaturaiyo/">プログラミングはつらいよ</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2003-03-25T00:00:00+09:00" pubdate data-updated="true">Mar 25<span>th</span>, 2003</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">DirectXのプログラミング・・<br>
+なんだかもう疲れてきました（早<br>
+なんでこれだけ必死に勉強しても<br>
+XファイルからのHeightFieldの<br>
+取得がうまくいかないのだろう・・<br>
+マイクロソフト社のSDKには<br>
+そんなのまったくなかったし・・<br>
+どうやるんだ；；<br>
+皆、ゲームにはなれているから<br>
+地形の上を歩くことをなんとも<br>
+思わないだろうけど、作る側から<br>
+見てみれば、マサにガスだね。（何<br>
+<br>
+何を思ったかVC++でDirectX初期化を<br>
+いろいろと書いてみたが・・<br>
+なんかRM使わない選択が間違いでして<br>
+Matrixをどうすればいいのかわからず<br>
+死亡しました。自殺4回目です。（何<br>
+<br>
+あと、腑に落ちないことがありました・・<br>
+DirectX9のSDKはなんと、C#言語と<br>
+C++言語とVB.NETしか対象にしてないんです。<br>
+おれのVB6.0ではファイルが開けません。<br>
+しょうがなくてまたVC++でソース読破を<br>
+狙いましたが・・<br>
+Microsoft社のサンプルは余計なコード多すぎ<br>
+ですね。<br>
+DirectX7しか扱ったことのないひとのなかで<br>
+特におれみたいなホビー級の人は<br>
+どうすればいいんでしょうかｗ<br>
+扱うな、といったところでしょうなｗ<br>
+どうせホビー級はDirectX7のRMで満足だし（ぇ
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2003/03/18/nanitu%21/">なにっ！</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2003-03-18T00:00:00+09:00" pubdate data-updated="true">Mar 18<span>th</span>, 2003</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">今日3Dプログラム続けてたら<br>
+なんか急にマウスの反応が鈍くなってきて<br>
+午後九時には左クリックができなくなりました；<br>
+ネジはずして中をみてみたが・・・<br>
+どこも壊れてない。<br>
+左ボタンに連結している小さな黒いスイッチが<br>
+どうやら物理的に壊れたようだ・・。<br>
+<br>
+まさかマウスが、使いすぎによって<br>
+クリックできなくなるとは思わなかった；；<br>
+かなり大切に使ってきたし、<br>
+強くクリックしたりしなかったんだが；；<br>
+たぶん、おれみたいに毎日数百回のクリックを<br>
+連発してると3年足らずで壊れるんだろうなｗ<br>
+<br>
+え～、よく働いてくれました、VAIOマウスよ。<br>
+今まで元気に働いてくれてありがとう（ぇ<br>
+<br>
+マウスがちょうどあまってたから、<br>
+これを使うことにしようか・・・。
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2003/03/14/mugumugu/">むぐむぐ</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2003-03-14T00:00:00+09:00" pubdate data-updated="true">Mar 14<span>th</span>, 2003</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">Direct3D奮闘中。<br>
+探さないでください。<br>
+じゃなくて、<br>
+実はまだ試験期間中（おい<br>
+<br>
+RMでとりあえず歩行プログラムの域を出て<br>
+軽くアクションゲームが組めるぐらいに<br>
+なってきたかな、というところでしたが<br>
+でこぼこした地形の上を、キャラが<br>
+それに沿って歩くというのができない！！<br>
+なんだか急に数学的知識が必要になる<br>
+らしくて、恐れております。（ぇ<br>
+<br>
+まずキャラの座標を取得して、次に<br>
+その地点の地形データの三角ポリゴンの<br>
+法線ベクトルを取得して、<br>
+三角ポリゴンの各頂点の座標を得て、<br>
+面の方程式を解くらしいです。<br>
+なんか中学レベル突破してます。<br>
+（いやもう自分も高校ですが）<br>
+意味がわかりません・・・<br>
+誰か、数学から教えてくれませんか～<br>
+とにかく数学マスターしなければ；；<br>
+それどころか法線ベクトルを得られる<br>
+関数もわかってない状態；；<br>
+また3D本とか数学書買ってくるか・・
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2003/03/05/ppkita%21/">PPキター！</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2003-03-05T00:00:00+09:00" pubdate data-updated="true">Mar 5<span>th</span>, 2003</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">ついに完成しました！<br>
+Web Playback Pluginの完成です<br>
+Downloadsページから<br>
+ダウンロードできますｗ<br>
+Final Fantasy MIDIのページに<br>
+試験的に配置してありますので<br>
+気になる方はご覧ください。<br>
+あのちっぽけな謎プレイヤーがPPです。<br>
+<br>
+それにしても・・・<br>
+もう期末一週間前。問題集やってなひ。<br>
+というわけで、試験勉強のため、<br>
+現時間（2003年3月5日 午後7:20）より<br>
+PCの電源を切り、バンジージャンプします。（は？
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2003/02/24/pp%21/">PP！</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2003-02-24T00:00:00+09:00" pubdate data-updated="true">Feb 24<span>th</span>, 2003</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">あ～<br>
+今日は感動したよ。<br>
+うむ。<br>
+今進めているプロジェクトのひとつである<br>
+FairyTaleのオープニングテーマ（非公開）<br>
+をWindows Media Player 9で再生したり<br>
+Web Playback PluginでMP3再生用<br>
+エンジンとして使っているDLLで再生したり<br>
+して比較していたら、<br>
+レスポンスのよさ、初期化の早さ、<br>
+Seekの速さなど、どれをとっても<br>
+いつのまにかWindows Media Playerを<br>
+上回っていた；；（言いすぎ<br>
+（音質はほぼ同じ。PPの方が上か・・？）<br>
+というわけで、PPだけでは勿体無い、<br>
+いろいろマルチメディアプログラムを<br>
+作ることを決意しましたとさ。（誰
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2003/02/23/gai-ming-to-pp/">改名 to PP</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2003-02-23T00:00:00+09:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2003</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">一日中プログラミングしてた；<br>
+今日はなんか勿体無い時間の<br>
+使い方をしたな・・・。<br>
+これまでWebなんとかPluginと<br>
+呼んでいたものはこれからは<br>
+Playback Plugin、略してPPという風に<br>
+改名されます。<br>
+（正式にはWeb Playback Plugin、WPPです）<br>
+結局MIDIでのチャンネルごとの音量を<br>
+取得する方法およびAPIが不明なので<br>
+MIDI再生時にはスペアナは出ません。<br>
+MP3エンコード、デコードができますが<br>
+Webで使うのが主目的なので<br>
+今回は実装はしませんでした。<br>
+全体的には今までおれがやったことないぐらい<br>
+力を注いで作っています。<br>
+今回実装する機能は、<br>
+・自動再生切り替え<br>
+・スペアナ表示切り替え（MP3再生時のみ）<br>
+・スキン変更<br>
+・ファイル保存機能<br>
+将来実装予定の機能は、<br>
+・MIDIでのスペアナ表示<br>
+・スペアナ位置指定<br>
+などです。乞うご期待。<br>
+＊今こんな感じ
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/blog/page/46/">&larr; Older</a>
+    
+    <a href="/blog/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/blog/page/44/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/blog/2012/07/08/225228/">深刻な野菜不足</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/03/30/225136/">旅立</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/02/04/sorosorohe-tokahui-demo/">そろそろ何とか会でも</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/01/08/jailbreaker/">Jailbreaker</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2011/03/16/dong-bei-di-fang-tai-ping-yang-chong-di-zhen/">東北地方太平洋沖地震</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mulgray">@mulgray</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mulgray',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/blog/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>……。 - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="珍しく、記事内容を暗示する題名を書く気が起きなかった。 14日から今までは、ずっと13～14日の記憶を反芻しては、苦しんでいた。 主に、私の当日の行動のおかしさについて、思い返しては吐き気がする思いだった。 起きていると息苦しいので、眠ってしまうと、同窓会の夢を見た。一時はどうなるかと思った。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mulgray.github.com/blog/blog/2006/08/18/dot-dot-dot-./">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mulgray.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">……。</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-08-18T00:00:00+09:00" pubdate data-updated="true">Aug 18<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content">珍しく、記事内容を暗示する題名を書く気が起きなかった。<br>
+<br>
+14日から今までは、ずっと13～14日の記憶を反芻しては、苦しんでいた。<br>
+<br>
+主に、私の当日の行動のおかしさについて、思い返しては吐き気がする思いだった。<br>
+<br>
+起きていると息苦しいので、眠ってしまうと、同窓会の夢を見た。一時はどうなるかと思った。<br>
+<br>
+今でも苦しさが消えたわけではないが、一応この通り、文を書くくらいはできる。<br>
+<br>
+苦しんでいる間にあっという間に時間は過ぎ、翌日は東大模試だ。<br>
+<br>
+もはや、力試しではなく、感覚をつかみに行くくらいしかできないと思う。<br>
+<br>
+それでも、できる限りは、頑張ってきます。<br>
+<br>
+————————————————————<br>
+<br>
+@niftyが提供するホームページスペースの@homepageでは、Perlで記述した自作CGIが使用可能であるが、sendmailは存在していない。<br>
+<br>
+掲示板CGIなどで、sendmailをどうしても使いたいという人は多く、今までにもいろいろと裏技を探してきた人は多い。<br>
+<br>
+中でも嘘sendmailとかは実用度が高かったはずだが、今では使えなくなっているとのこと。<br>
+<br>
+私もsendmailを実現したくて、似たような動作ができる方法を模索したが、どうにも上手くいかないので、最終的には少し無理のある手法にはなったが、一応新しい解決法もどきみたいなものは考えついた。<br>
+<br>
+@nifty独自の&#8221;メールデコード&#8221;を利用する方法だが、<br>
+<br>
+例えば掲示板で、投稿処理の際、投稿後に&#8221;正常に処理されました&#8221;というようなメッセージを表示して、&#8221;戻る&#8221;というボタンを押せば掲示板画面に戻れるようにしておくなどして、そういった投稿後メッセージ表示部で例えば<br>
+<br>
+print &#8220;&lt;form method=&#8217;post&#8217; action=&#8217;http://mdec.nifty.com/cgi-bin/ahpmdec.cgi&#8217;&gt;¥n&#8221;;<br>
+<br>
+print &#8220;&lt;input type=&#8217;hidden&#8217; name=&#8217;ok_page&#8217; value=&#8217;掲示板のアドレス&#8217;&gt;¥n&#8221;;<br>
+<br>
+print &#8220;&lt;input type=&#8217;hidden&#8217; name=&#8217;to_mail&#8217; value=&#8217;送信先メールアドレス&#8217;&gt;¥n&#8221;;<br>
+<br>
+print &#8220;&lt;input type=&#8217;hidden&#8217; name=&#8217;from&#8217; value=&#8217;適当なメールアドレス&#8217;&gt;¥n&#8221;;<br>
+<br>
+print &#8220;&lt;input type=&#8217;hidden&#8217; name=&#8217;sub&#8217; value=&#8217;$in{¥&#8221;sub¥&#8221;}&#8217;&gt;¥n&#8221;;<br>
+<br>
+print &#8220;&lt;input type=&#8217;hidden&#8217; name=&#8217;name&#8217; value=&#8217;$in{¥&#8221;name¥&#8221;}&#8217;&gt;¥n&#8221;;<br>
+<br>
+print &#8220;&lt;input type=&#8217;hidden&#8217; name=&#8217;body&#8217; value=&#8217;$in{¥&#8221;comment¥&#8221;}&#8217;&gt;¥n&#8221;;<br>
+<br>
+print &#8220;&lt;input type=submit value=¥&#8221;戻る¥&#8221;&gt;&lt;/form&gt;¥n&#8221;;<br>
+<br>
+のようにして全記入フォームを自動的に埋める方法がある。<br>
+<br>
+（全角の¥を半角に直して読んで下さい…どうも半角で記述すると消される…）<br>
+<br>
+ここでsub、name、commentというのは掲示板の各入力フォームから渡された題名、名前、コメントを指す。<br>
+<br>
+CGIで拾った題名や名前やコメントなどを、これらでそのまま代入しているだけである。必要ならばもっと送信内容を整形することも簡単にできる。<br>
+<br>
+とにかくこのようにすると、戻るボタンを押してさえもらえれば、殆どsendmailのようなメールを受け取ることができる。<br>
+<br>
+意外とこれでもいけるような気がするのだが、どうだろうか。<br>
+<br>
+携帯用CGIでも同じ手法が使える。（EZwebしか試してないが…）<br>
+<br>
+有名なCGIの中では、例えばe-padなどでもこういったものが簡単に記述できる。<br>
+<br>
+e-padでは500行目付近に投稿受理のメッセージ表示部があるので、@niftyで諦めた人は試してみるのも良いかも知れない。<br>
+<br>
+@nifty用で他にもっと良い方法を思いついた方がいましたら是非ご教示下さいませm(_ _)m<br>
+<!--more--><br>
+&#8212;&#8211;
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-08-18T00:00:00+09:00" pubdate data-updated="true">Aug 18<span>th</span>, 2006</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mulgray.github.com/blog/blog/2006/08/18/dot-dot-dot-./" data-via="" data-counturl="http://mulgray.github.com/blog/blog/2006/08/18/dot-dot-dot-./" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/blog/2006/08/14/tong-chuang-hui/" title="Previous Post: 同窓会">&laquo; 同窓会</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/blog/2006/08/25/any-help/" title="Next Post: any help">any help &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/blog/2012/07/08/225228/">深刻な野菜不足</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/03/30/225136/">旅立</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/02/04/sorosorohe-tokahui-demo/">そろそろ何とか会でも</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/01/08/jailbreaker/">Jailbreaker</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2011/03/16/dong-bei-di-fang-tai-ping-yang-chong-di-zhen/">東北地方太平洋沖地震</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mulgray">@mulgray</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mulgray',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/blog/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
